@@ -1,0 +1,6 @@
+InvoiceID,Vendor,Amount,DueDate
+I001,Acme,1200,2026-10-20
+I002,North,abc,2026-10-21
+I001,Acme,1200,2026-10-20
+I003,West,-10,2026-10-22
+I004,East,500,invalid
