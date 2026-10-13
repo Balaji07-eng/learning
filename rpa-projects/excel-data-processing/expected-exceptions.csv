@@ -1,0 +1,7 @@
+RecordID,Reason
+R001,Duplicate RecordID
+R003,Name missing
+R004,Amount must be greater than zero
+R002,Duplicate RecordID
+R006,Amount is not numeric
+R007,Department not allowed
