@@ -1,0 +1,6 @@
+ID,Status,Value,Quantity
+P001,Reorder,,25
+P002,Sufficient stock,,0
+P003,Reorder,,20
+P004,Invalid stock values,,
+P005,Invalid stock values,,
