@@ -1,0 +1,9 @@
+RecordID,Name,Department,Amount
+R002,Ravi,Support,250
+R001,Asha,Sales,100
+R003,,Operations,150
+R004,Meera,Sales,-20
+R005,Kiran,Operations,300
+R002,Ravi,Support,250
+R006,Dev,Support,abc
+R007,Tara,Finance,200
