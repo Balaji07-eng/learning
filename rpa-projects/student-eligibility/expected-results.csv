@@ -1,0 +1,8 @@
+StudentID,Name,Status,Reason
+S001,Asha,Eligible,Age and marks meet criteria
+S002,Ravi,Not Eligible,Age below 18
+S003,Meera,Not Eligible,Marks below 60
+S004,Kiran,Eligible,Age and marks meet criteria
+S005,Dev,Invalid Input,Age missing
+S006,Tara,Invalid Input,Marks outside 0-100
+S007,Neel,Invalid Input,Age is not numeric
