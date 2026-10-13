@@ -1,0 +1,6 @@
+ID,Status,Value,Quantity
+E001,Eligible for approval,1500,
+E002,Manager review,2500,
+E003,Receipt review,300,
+E004,Invalid category,,
+E005,Invalid amount,,
