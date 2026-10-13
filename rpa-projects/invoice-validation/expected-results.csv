@@ -1,0 +1,6 @@
+ID,Status,Value,Quantity
+I001,Valid,1200,
+I002,Invalid amount,,
+I001,Duplicate ID,,
+I003,Invalid amount,,
+I004,Invalid due date,,
