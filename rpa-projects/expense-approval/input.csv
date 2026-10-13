@@ -1,0 +1,6 @@
+ClaimID,Employee,Category,Amount,Receipt
+E001,Asha,Travel,1500,Yes
+E002,Ravi,Meals,2500,Yes
+E003,Meera,Travel,300,No
+E004,Dev,Other,100,Yes
+E005,Neel,Meals,NaN,Yes
