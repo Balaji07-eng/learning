@@ -1,0 +1,32 @@
+# Invoice Validation and Summary
+
+## Objective
+Valid invoices can be reviewed alongside an exception report. No payments are made.
+
+## Status
+Runnable Python reference and Power Automate Desktop implementation guide. No exported PAD flow or PAD execution evidence is included. Sample rules and records are fictional.
+
+## Rules
+InvoiceID and Vendor required; Amount must be finite and positive; DueDate must be ISO YYYY-MM-DD. Duplicate accepted invoice IDs are rejected.
+Duplicates are checked against earlier accepted records in this input batch. Invalid records do not reserve their ID. The reference does not persist processed IDs between runs.
+
+## Run the Python reference
+Requires Python 3.9+; no external packages.
+```sh
+python reference.py
+python reference.py input.csv results.csv
+```
+Run from this folder. The default output is results.csv and is replaced on each run. The input remains unchanged. Compare results with expected-results.csv. Value holds an amount; Quantity holds a reorder count.
+
+## Build in Power Automate Desktop
+1. Import input.csv into Excel and save as .xlsx.
+2. Read invoice rows from Excel; validate required fields and convert Amount with error handling; validate DueDate; keep an accepted-ID list; write accepted invoices and exceptions to separate sheets; sum accepted Amount values for a summary.
+3. Track IDs of accepted records and reject repeated IDs within the batch.
+4. Save results to a separate workbook and close Excel. Handle conversion and file errors explicitly.
+5. Compare every decision with expected-results.csv before documenting the flow as completed.
+
+## Further checks
+Test blank required values, duplicate accepted IDs, nonnumeric values, an empty file with headers, and malformed CSV rows. Numeric NaN and infinity must fail validation. Rerunning the same input should reproduce the same report.
+
+## Portfolio evidence to add
+Export or copy PAD actions; add screenshots of the flow and results and actual test notes. Only claim PAD implementation on your resume after building and running it.
